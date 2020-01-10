@@ -1,4 +1,4 @@
-public class Num {
+public class Num implements Comparable{
     private int value;
 
     public Num(int val){
@@ -20,5 +20,10 @@ public class Num {
 
     public boolean equals(Num otherNum){
        return this.getValue() == otherNum.getValue();
+    }
+
+    public int compareTo(Object obj){
+        Num otherNum = (Num) other;
+        return this.getValue() - otherNum.getValue();
     }
     }
