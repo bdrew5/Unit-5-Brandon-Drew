@@ -23,7 +23,7 @@ public class Num implements Comparable{
     }
 
     public int compareTo(Object obj){
-        Num otherNum = (Num) other;
+        Num otherNum = (Num) obj;
         return this.getValue() - otherNum.getValue();
     }
     }
